@@ -1,0 +1,24 @@
+.add__right {
+  margin: 70px;
+  position: relative;
+  left: 70%;
+  .rightBtn {
+    background-color: black;
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    height: 40px;
+    &:hover {
+      background-color: rgb(206, 25, 25);
+    }
+    .link {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      //   font-family: Verdana, Geneva, Tahoma, sans-serif;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

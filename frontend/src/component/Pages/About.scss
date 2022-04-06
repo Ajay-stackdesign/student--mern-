@@ -1,0 +1,25 @@
+.about {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 80vh;
+  .linkedin {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 100px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .github {
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    a {
+      padding: 100px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.student {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   width: 500px;
+  .studentDetail {
+    text-decoration: none;
+    color: black;
+  }
+}

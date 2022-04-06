@@ -1,0 +1,39 @@
+.searchBox {
+  margin-top: 50px;
+  width: 100vw;
+  height: 10px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .searchText {
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    // background-color: lightblue;
+    border-radius: 5px;
+    color: red;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  .sub {
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

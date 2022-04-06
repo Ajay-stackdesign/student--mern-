@@ -1,0 +1,107 @@
+@mixin new {
+  margin-top: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(102, 71, 71);
+  width: 400px;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: black;
+  }
+}
+
+@mixin upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .update__name {
+    label {
+      center {
+        font-size: 25px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.update {
+  background-color: aquamarine;
+  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+
+  h4 {
+    border-bottom: 2px solid black;
+  }
+  @include upper();
+  .update__name {
+    label {
+      center {
+        @include upper();
+      }
+    }
+    .name {
+      @include new();
+    }
+  }
+  .update__email {
+    label {
+      center {
+        @include upper();
+      }
+    }
+    .email {
+      @include new();
+    }
+  }
+  .update__contact {
+    label {
+      center {
+        @include upper();
+      }
+    }
+    .number {
+      @include new();
+    }
+  }
+  .update__classname {
+    label {
+      center {
+        @include upper();
+      }
+    }
+    .classname {
+      @include new();
+    }
+  }
+  .update__roll {
+    label {
+      center {
+        @include upper();
+      }
+    }
+    .update__number {
+      @include new();
+    }
+  }
+  .submitBtn {
+    margin-top: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 176px;
+    cursor: pointer;
+    &:hover {
+      background-color: bisque;
+      color: black;
+      border: none;
+    }
+  }
+}
